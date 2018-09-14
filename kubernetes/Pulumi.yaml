@@ -1,0 +1,5 @@
+name: k8s-article
+runtime: nodejs
+description: A minimal Kubernetes TypeScript program
+template:
+  description: A minimal Kubernetes TypeScript program
