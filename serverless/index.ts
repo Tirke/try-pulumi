@@ -22,4 +22,4 @@ api.get('/{route+}', async (req, res) => {
 })
 
 // Export api endpoint
-export const endpoint = `${api.publish().url}test`
+export const endpoint = api.publish().url.apply(url => `${url}test`)
