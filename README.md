@@ -1,6 +1,7 @@
 # Articles
 
 [Article 1 on Kubernetes](https://blog.octo.com/pulumi-par-la-pratique-kubernetes/)
+
 [Article 2 on Serverless](https://blog.octo.com/pulumi-par-la-pratique-serverless/)
 
 # Prerequisites
