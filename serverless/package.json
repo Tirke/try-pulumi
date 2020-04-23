@@ -1,11 +1,11 @@
 {
   "name": "serverless",
   "devDependencies": {
-    "@types/node": "latest"
+    "@types/node": "13.13.2"
   },
   "dependencies": {
-    "@pulumi/aws": "^2.0.0-beta.3",
-    "@pulumi/cloud": "^0.19.0",
-    "@pulumi/cloud-aws": "^0.19.0"
+    "@pulumi/aws": "^2.1.0",
+    "@pulumi/cloud": "^0.20.0",
+    "@pulumi/cloud-aws": "^0.20.0"
   }
 }

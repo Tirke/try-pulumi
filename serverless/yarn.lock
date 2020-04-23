@@ -74,12 +74,12 @@
     read-package-tree "^5.2.1"
     resolve "^1.7.1"
 
-"@pulumi/aws@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-2.0.0-beta.3.tgz#7b7466de7b4aa22ae54c732c6aebc5f9a1409ea6"
-  integrity sha512-9xdHRf2bOo05uwfUr2/4J0zB3m34JS3hF2ZDPyxdPYHgys0TjhGDiJ2k0cCIEitCZUrCo3AdYH0PXhiOjgSUWw==
+"@pulumi/aws@^1.0.0 || ^2.0.0", "@pulumi/aws@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-2.1.0.tgz#b385d16892e9fbd9e27e539607affa916f3a7853"
+  integrity sha512-zVyWEYPq+6RHJfh2rIeMWktrSM8oq3RvQGyLiF2tBO6tKMIOzblgu26S4zUS94kreZ9v1POKTvbEO54c9DELmQ==
   dependencies:
-    "@pulumi/pulumi" "^2.0.0-beta.2"
+    "@pulumi/pulumi" "^2.0.0"
     aws-sdk "^2.0.0"
     builtin-modules "3.0.0"
     mime "^2.0.0"
@@ -97,26 +97,26 @@
     "@types/aws-lambda" "^8.10.23"
     mime "^2.0.0"
 
-"@pulumi/cloud-aws@^0.19.0":
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/cloud-aws/-/cloud-aws-0.19.0.tgz#81014521849bbc59433cb42b595d1f730ae05f29"
-  integrity sha512-SfwyQ7Nu0l9wjOFO/AIFjNaE2dSm6cViuQxxcmux2ZxygWijXAyL8uSzmY1lusEgH/w01zvULp9+3WMQ4STHSQ==
+"@pulumi/cloud-aws@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/cloud-aws/-/cloud-aws-0.20.0.tgz#5e582aa6c414270a56ea1f1202d7c3beda070d07"
+  integrity sha512-HsnfoHvxX19idYyNyzSkUoE/YT64A1Z9B8gEVDtUwZDQthnQ6Xo4hN+SFZSNml+Tr5gh++8ypw5wIG8M+Ix4nA==
   dependencies:
-    "@pulumi/aws" "^1.0.0"
+    "@pulumi/aws" "^1.0.0 || ^2.0.0"
     "@pulumi/awsx" "^0.19.0"
-    "@pulumi/cloud" v0.19.0
+    "@pulumi/cloud" v0.20.0
     "@pulumi/docker" "^0.17.0"
-    "@pulumi/pulumi" "^1.0.0"
+    "@pulumi/pulumi" "^1.0.0 || ^2.0.0"
     aws-serverless-express "^3.3.5"
     mime "^2.0.3"
     semver "^5.4.0"
 
-"@pulumi/cloud@^0.19.0", "@pulumi/cloud@v0.19.0":
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/cloud/-/cloud-0.19.0.tgz#844c4d1f5525d24fce6ef0954363e3ff822abb6e"
-  integrity sha512-Cmqhg3M/alrQ4TGw7Sx7EL9CG1iALJiXSUokeBcJ0KTZLaxPr4jhwujuSKzFJUgqtTr/CY02cBMTpvwHQxni+A==
+"@pulumi/cloud@^0.20.0", "@pulumi/cloud@v0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/cloud/-/cloud-0.20.0.tgz#64accb0c8924718638897f37c282b0eee4d76efe"
+  integrity sha512-xCXSAMoqkXms/uNiQJPSsNVrWnBJzCs4aMZ30twtzqoZcl3kdRBJOhAOWOssNU+NHqkQk411WadwQ4iTvPRwCA==
   dependencies:
-    "@pulumi/pulumi" "^1.0.0"
+    "@pulumi/pulumi" "^1.0.0 || ^2.0.0"
 
 "@pulumi/docker@^0.17.0":
   version "0.17.4"
@@ -154,10 +154,10 @@
     typescript "~3.7.3"
     upath "^1.1.0"
 
-"@pulumi/pulumi@^2.0.0-beta.2":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.0.0-beta.3.tgz#fd3b19a60a02ae3824e7b7bcf8651d52f309c5c6"
-  integrity sha512-7T1vA9VVRfJDDwkcGt1fkPwVF+WctzYvUWrpXtrqLbL1Qk4aXihm2fsSuOYWZmF5CitnsqsjyfJVkzy/D8rUPw==
+"@pulumi/pulumi@^1.0.0 || ^2.0.0", "@pulumi/pulumi@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-2.0.0.tgz#b328687e1c95adb772a1619320cbbbe2362d5773"
+  integrity sha512-aHaW4IZsNWUYRCZoGcl1oVuLSUxzs0GXcfs34at7CWBHdpki5lQFIiT65gX6WMJmpfx9bI7QevBVgp4xv7NWow==
   dependencies:
     "@grpc/grpc-js" "^0.6.15"
     "@pulumi/query" "^0.3.0"
@@ -196,10 +196,15 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.1.tgz#459c65fa1867dafe6a8f322c4c51695663cc55e9"
   integrity sha512-5tXH6Bx/kNGd3MgffdmP4dy2Z+G4eaXw0SE81Tq3BNadtnMR5/ySMzX4SLEzHJzSmPNn4HIdpQsBvXMUykr58w==
 
-"@types/node@*", "@types/node@latest":
+"@types/node@*":
   version "13.11.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.11.1.tgz#49a2a83df9d26daacead30d0ccc8762b128d53c7"
   integrity sha512-eWQGP3qtxwL8FGneRrC5DwrJLGN4/dH1clNTuLfN81HCrxVtxRjygDTUoZJ5ASlDEeo0ppYFQjQIlXhtXpOn6g==
+
+"@types/node@13.13.2":
+  version "13.13.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.2.tgz#160d82623610db590a64e8ca81784e11117e5a54"
+  integrity sha512-LB2R1Oyhpg8gu4SON/mfforE525+Hi/M1ineICEDftqNVTyFg1aRIeGuTvXAoWHc4nbrFncWtJgMmoyRvuGh7A==
 
 "@types/node@^10.1.0":
   version "10.17.19"

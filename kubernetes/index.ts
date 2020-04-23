@@ -8,7 +8,7 @@ const appName = 'nginx'
 const appLabels = {app: appName}
 
 // Create a VPC for our cluster.
-const vpc = new awsx.ec2.Vpc('eks-vpc', { });
+const vpc = new awsx.ec2.Vpc('eks-vpc', {});
 
 // Create the EKS cluster, including a "gp2"-backed StorageClass and a deployment of the Kubernetes dashboard.
 const cluster = new eks.Cluster('eks-cluster', {
