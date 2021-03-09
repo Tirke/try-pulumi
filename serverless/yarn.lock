@@ -62,22 +62,10 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@pulumi/aws@^1.0.0 || ^2.0.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-2.1.0.tgz#b385d16892e9fbd9e27e539607affa916f3a7853"
-  integrity sha512-zVyWEYPq+6RHJfh2rIeMWktrSM8oq3RvQGyLiF2tBO6tKMIOzblgu26S4zUS94kreZ9v1POKTvbEO54c9DELmQ==
-  dependencies:
-    "@pulumi/pulumi" "^2.0.0"
-    aws-sdk "^2.0.0"
-    builtin-modules "3.0.0"
-    mime "^2.0.0"
-    read-package-tree "^5.2.1"
-    resolve "^1.7.1"
-
-"@pulumi/aws@^3.23.0":
-  version "3.23.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-3.23.0.tgz#12f74bb1b35ba298cc20dbfc1c2147444c32861c"
-  integrity sha512-iw9a5U9iO0Uk03WwxXIO+jH3SsMpSu2BmcVxKXtkbS5EukY4BsRcC3p6ydMm0HXsqIY41LuGUb7E+jLm3G6lww==
+"@pulumi/aws@^3.25.1", "@pulumi/aws@^3.32.0":
+  version "3.32.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-3.32.0.tgz#065a5c3033ebda248c28fe9ed685dfd9c5e33938"
+  integrity sha512-AQ6jJlJ4jVPduwv0N/CW0xyt33WztsanJXjkIiYn4FGOK6y9fSPu6Tgdj9pXXh0A8fXnKzRkJxy130nIX+ChcQ==
   dependencies:
     "@pulumi/pulumi" "^2.17.0"
     aws-sdk "^2.0.0"
@@ -86,33 +74,33 @@
     read-package-tree "^5.2.1"
     resolve "^1.7.1"
 
-"@pulumi/awsx@^0.20.0":
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/awsx/-/awsx-0.20.0.tgz#22f2e26d82f47b4d843976ede4ea303b69ea186e"
-  integrity sha512-ZYe3aH4hsxWPbjh9fgvZg3iExNDdEBBWXC1tpfuZgaU4+oxKixo9vZ74cb5N9DUH7AKf4H4ZTRApF32WsDa5xw==
+"@pulumi/awsx@^0.24.0":
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/awsx/-/awsx-0.24.0.tgz#fa977169ee49e8936a6fdbaf8ffe738f714fe1c7"
+  integrity sha512-jsBOD9bFbFxS44WhoJWQmjyLBvqqRn3rxdBTz2KpJVPhByg+qOF9Xt1q58EgUvf7k3DZhx8ZUsIsnmNewkKxAQ==
   dependencies:
     "@pulumi/docker" "^1.0.0 || ^2.0.0"
     "@types/aws-lambda" "^8.10.23"
     mime "^2.0.0"
 
-"@pulumi/cloud-aws@^0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/cloud-aws/-/cloud-aws-0.21.0.tgz#bbde42e32ab39b2f7b3e58c1552f46096cea1197"
-  integrity sha512-vOU7PDlPoBZWwA+xnANvW9ka38ArSv2txb+FCk2e0QWsv4Ftc65ltZ/8uY+w2iaa8W3k7s9cA7Q7kgry17PNxA==
+"@pulumi/cloud-aws@^0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/cloud-aws/-/cloud-aws-0.22.0.tgz#4556587b53e3aaf80bf0181381e58e79e1502622"
+  integrity sha512-PMjTsqfp4pJNwKqtl4npZqyKVvsumlo1R3YxTZRW/pWjJA9/0RLwhJakFzF4qFW3WaasqTzZBBTqTJjDnP//gQ==
   dependencies:
-    "@pulumi/aws" "^1.0.0 || ^2.0.0"
-    "@pulumi/awsx" "^0.20.0"
-    "@pulumi/cloud" v0.21.0
+    "@pulumi/aws" "^3.25.1"
+    "@pulumi/awsx" "^0.24.0"
+    "@pulumi/cloud" v0.22.0
     "@pulumi/docker" "^1.0.0 || ^2.0.0"
     "@pulumi/pulumi" "^1.0.0 || ^2.0.0"
     aws-serverless-express "^3.3.5"
     mime "^2.0.3"
     semver "^5.4.0"
 
-"@pulumi/cloud@^0.21.0", "@pulumi/cloud@v0.21.0":
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/cloud/-/cloud-0.21.0.tgz#4109d0bbfb8744a7cadafb23191f5784db3650e4"
-  integrity sha512-BqVGYtZv0HvGGAflL2Z0KJUQ8Xon7zd/RGdYMxqDi532jX9cSjPHwKAlp+IdiA6+GBv75eEsxofX+CKtOoRpJQ==
+"@pulumi/cloud@^0.22.0", "@pulumi/cloud@v0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/cloud/-/cloud-0.22.0.tgz#ee96df5827dabfb243a5bbaca8609a1933ce5989"
+  integrity sha512-pWe8sLcqqju8+7XE6jVd5/DlcFfBwWd8BasTgaMSJUqqY8Jw5StvG0ZtbE70lo+jzXXzj6r574Kuutw8vCUa7w==
   dependencies:
     "@pulumi/pulumi" "^1.0.0 || ^2.0.0"
 
@@ -178,10 +166,10 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.1.tgz#459c65fa1867dafe6a8f322c4c51695663cc55e9"
   integrity sha512-5tXH6Bx/kNGd3MgffdmP4dy2Z+G4eaXw0SE81Tq3BNadtnMR5/ySMzX4SLEzHJzSmPNn4HIdpQsBvXMUykr58w==
 
-"@types/node@14.14.20":
-  version "14.14.20"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.20.tgz#f7974863edd21d1f8a494a73e8e2b3658615c340"
-  integrity sha512-Y93R97Ouif9JEOWPIUyU+eyIdyRqQR0I8Ez1dzku4hDx34NWh4HbtIc3WNzwB1Y9ULvNGeu5B8h8bVL5cAk4/A==
+"@types/node@14.14.32":
+  version "14.14.32"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.32.tgz#90c5c4a8d72bbbfe53033f122341343249183448"
+  integrity sha512-/Ctrftx/zp4m8JOujM5ZhwzlWLx22nbQJiVqz8/zE15gOeEW+uly3FSX4fGFpcfEvFzXcMCJwq9lGVWgyARXhg==
 
 "@types/node@^10.1.0":
   version "10.17.19"
