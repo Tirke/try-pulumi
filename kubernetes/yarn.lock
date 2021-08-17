@@ -81,10 +81,10 @@
     read-package-tree "^5.2.1"
     resolve "^1.7.1"
 
-"@pulumi/awsx@^0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/awsx/-/awsx-0.30.0.tgz#cbab6f745aa09ee7179880c99149f2d17c2e7b19"
-  integrity sha512-QtYVDFSkZxJ/JkAxaSwms9i/tJU2rA9F/VncCN6e8D0r29C5t4eYQhmB4chsLww9AjWJPRM7CXosDJs8+gy1Zg==
+"@pulumi/awsx@^0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/awsx/-/awsx-0.31.0.tgz#f77368ccbdd76d21782d715f5a88029e5c65c57f"
+  integrity sha512-Z8WDMO0rpwPIACy0oD3m80DdHE+0/wFtBy5YdPiieMr4CekohOfc83BTix3U5dDfv6XCtEsMI+VzZvgYUM1e4w==
   dependencies:
     "@pulumi/docker" "^3.0.0"
     "@types/aws-lambda" "^8.10.23"
@@ -98,10 +98,10 @@
     "@pulumi/pulumi" "^3.0.0"
     semver "^5.4.0"
 
-"@pulumi/eks@^0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/eks/-/eks-0.30.0.tgz#23a7b420aeefbd03c93dbd9fedc3528eae9f9301"
-  integrity sha512-12enbA6s0qOLq1OhwSJPS3RBppzWL9zKvLpL89hUNK8cpC4ZjTK2eBxPEVx7PupTVU+7ZWyehAAnK3FLVMyAEQ==
+"@pulumi/eks@^0.32.0":
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/eks/-/eks-0.32.0.tgz#c0ca72b1d0bacb4cb83a71e74300dee344b77bf4"
+  integrity sha512-7z+FyhSQAbWC7sCoXDWKroDTe/8DcNVF7KxBzQIgqUaHDcAP1u0fpD6nutiNgmCY/cqsYrhPPgwgZTRQTxHPxw==
   dependencies:
     "@pulumi/aws" "^4.0.0"
     "@pulumi/kubernetes" "^3.0.0"
@@ -112,7 +112,7 @@
     netmask "^2.0.1"
     which "^1.3.1"
 
-"@pulumi/kubernetes@^3.0.0", "@pulumi/kubernetes@^3.1.1":
+"@pulumi/kubernetes@^3.0.0":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@pulumi/kubernetes/-/kubernetes-3.1.1.tgz#e6bbc7883b6b9f9163941d3a7f0e596d211b010d"
   integrity sha512-kVYBCAPBnzeRzsc/VzW/jF9RQ0fkTUF8hOw7oXa9mJSi/8vXcHo5Z46a2+VrKR3kay2cJ7Wuv6xtKHpcqORU2A==
@@ -126,7 +126,21 @@
     shell-quote "^1.6.1"
     tmp "^0.0.33"
 
-"@pulumi/pulumi@^3.0.0", "@pulumi/pulumi@^3.2.1":
+"@pulumi/kubernetes@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/kubernetes/-/kubernetes-3.6.0.tgz#152abd71b19abea5f71ae01c607120d78a12319e"
+  integrity sha512-e13xbz92xmzyTO3skyts25O5d95Jktftu3+KN870TcV5pss0FKGvLR8n8L4VX2OumDUrnD9KfK2UXU2SSA3yeQ==
+  dependencies:
+    "@pulumi/pulumi" "^3.0.0"
+    "@types/glob" "^5.0.35"
+    "@types/node-fetch" "^2.1.4"
+    "@types/tmp" "^0.0.33"
+    glob "^7.1.2"
+    node-fetch "^2.3.0"
+    shell-quote "^1.6.1"
+    tmp "^0.0.33"
+
+"@pulumi/pulumi@^3.0.0":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.2.1.tgz#c7c979aa29d595ea691426b78d44bdc6b9e8d793"
   integrity sha512-fFkFEUHSM3gCV+TdwPyKuJOS5EsCzjYVfE6Qyz4UR+qRmExxNkOBX73Uc+BkD79vpqs4B9mPNlpPC9UHGBDvLg==
@@ -144,6 +158,27 @@
     semver "^6.1.0"
     source-map-support "^0.4.16"
     split2 "^3.2.2"
+    ts-node "^7.0.1"
+    typescript "~3.7.3"
+    upath "^1.1.0"
+
+"@pulumi/pulumi@^3.10.2":
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.10.2.tgz#dc4f03182c703cb49bf190e509e63ea9aabafb41"
+  integrity sha512-G+PsC/H9zI/b3bZVy0D4KFQAywTWmaT1mqeHXt/OjVhO7REcbfigVVsqwQ8MszeTfztfrkXG9akhwJTWR81vWA==
+  dependencies:
+    "@grpc/grpc-js" "^1.2.7"
+    "@logdna/tail-file" "^2.0.6"
+    "@pulumi/query" "^0.3.0"
+    google-protobuf "^3.5.0"
+    js-yaml "^3.14.0"
+    minimist "^1.2.0"
+    normalize-package-data "^2.4.0"
+    protobufjs "^6.8.6"
+    read-package-tree "^5.3.1"
+    require-from-string "^2.0.1"
+    semver "^6.1.0"
+    source-map-support "^0.4.16"
     ts-node "^7.0.1"
     typescript "~3.7.3"
     upath "^1.1.0"
@@ -195,10 +230,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.11.1.tgz#49a2a83df9d26daacead30d0ccc8762b128d53c7"
   integrity sha512-eWQGP3qtxwL8FGneRrC5DwrJLGN4/dH1clNTuLfN81HCrxVtxRjygDTUoZJ5ASlDEeo0ppYFQjQIlXhtXpOn6g==
 
-"@types/node@15.0.2":
-  version "15.0.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.2.tgz#51e9c0920d1b45936ea04341aa3e2e58d339fb67"
-  integrity sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==
+"@types/node@16.6.1":
+  version "16.6.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.6.1.tgz#aee62c7b966f55fc66c7b6dfa1d58db2a616da61"
+  integrity sha512-Sr7BhXEAer9xyGuCN3Ek9eg9xPviCF2gfu9kTfuU2HkTVAMYSDeX40fvpmo72n5nansg3nsBjuQBrsS28r+NUw==
 
 "@types/node@>=12.12.47":
   version "14.14.32"

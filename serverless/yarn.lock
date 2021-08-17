@@ -67,10 +67,22 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@pulumi/aws@^4.0.0", "@pulumi/aws@^4.3.0":
+"@pulumi/aws@^4.0.0":
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-4.3.0.tgz#40bc4700c060b27f3a2b735623a462c69b88ed46"
   integrity sha512-s5zg62/tutILdmiiMVEOABAH2lpfkXaKznevG6J5pKOdlq+zsVMh6FrNVCsqJe8JRkZBSfQeexmr2xCibU8cDA==
+  dependencies:
+    "@pulumi/pulumi" "^3.0.0"
+    aws-sdk "^2.0.0"
+    builtin-modules "3.0.0"
+    mime "^2.0.0"
+    read-package-tree "^5.2.1"
+    resolve "^1.7.1"
+
+"@pulumi/aws@^4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/aws/-/aws-4.15.0.tgz#0ba894f4557bb9b6dce804244dddd383f926733b"
+  integrity sha512-LaOFST4Tn2eYUYW6WDVW5yMXkHIZoEMlOgygzTLVpCz/7dNKEkAmfwK42TOdUjO6oTKQmldY9G4Xjg3S0kR1UA==
   dependencies:
     "@pulumi/pulumi" "^3.0.0"
     aws-sdk "^2.0.0"
@@ -88,24 +100,24 @@
     "@types/aws-lambda" "^8.10.23"
     mime "^2.0.0"
 
-"@pulumi/cloud-aws@^0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/cloud-aws/-/cloud-aws-0.30.0.tgz#9a0768d7d9b59e867d7ca4a61fd1bef431e13029"
-  integrity sha512-xwQajC2EatCQ1f+c0IzH5OCObBJBFB84+EAYeExxXMmwrmp6wXCZNAymUoHHp+Qa2iue/d2ZDGUzLRr3dlfnEg==
+"@pulumi/cloud-aws@^0.30.1":
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/@pulumi/cloud-aws/-/cloud-aws-0.30.1.tgz#01f2f4ef2632cac951d58105ea42ed69435787b5"
+  integrity sha512-9uJUKOT61/EKM7rgXk5eQ7VeXOwdie+PBu4CP8KN1JsgxnUypc1397+9dE1N8V7PeBZoRXpEXH/UJrp9DzwY5A==
   dependencies:
     "@pulumi/aws" "^4.0.0"
     "@pulumi/awsx" "^0.30.0"
-    "@pulumi/cloud" v0.30.0
+    "@pulumi/cloud" v0.30.1
     "@pulumi/docker" "^3.0.0"
     "@pulumi/pulumi" "^3.0.0"
     aws-serverless-express "^3.3.5"
     mime "^2.0.3"
     semver "^5.4.0"
 
-"@pulumi/cloud@^0.30.0", "@pulumi/cloud@v0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/cloud/-/cloud-0.30.0.tgz#c17193bcfbd43f70daf4625061288fa49c5dc4a2"
-  integrity sha512-WrPY3YpJJA7eiLUN1PBDKmL7gBuJYv/Q2PMCm7aJkf6+mljOHJ7cwlKctxvDLA+BbmNzWue8o/8lww9I38j9Bw==
+"@pulumi/cloud@^0.30.1", "@pulumi/cloud@v0.30.1":
+  version "0.30.1"
+  resolved "https://registry.yarnpkg.com/@pulumi/cloud/-/cloud-0.30.1.tgz#50f75b2c180be6bcf5096abe9b4b661b3cd2f36f"
+  integrity sha512-yr39QZZvqqG7FWUKBRJzsYjxoNEjAV6B45LxV5MsohFYQyBi7Vk2cHkhWO7o1OK32jLNF73WsoqVqW/JTn59cA==
   dependencies:
     "@pulumi/pulumi" "^3.0.0"
 
@@ -154,7 +166,12 @@
   resolved "https://registry.yarnpkg.com/@types/long/-/long-4.0.1.tgz#459c65fa1867dafe6a8f322c4c51695663cc55e9"
   integrity sha512-5tXH6Bx/kNGd3MgffdmP4dy2Z+G4eaXw0SE81Tq3BNadtnMR5/ySMzX4SLEzHJzSmPNn4HIdpQsBvXMUykr58w==
 
-"@types/node@15.0.2", "@types/node@>=12.12.47":
+"@types/node@16.6.1":
+  version "16.6.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.6.1.tgz#aee62c7b966f55fc66c7b6dfa1d58db2a616da61"
+  integrity sha512-Sr7BhXEAer9xyGuCN3Ek9eg9xPviCF2gfu9kTfuU2HkTVAMYSDeX40fvpmo72n5nansg3nsBjuQBrsS28r+NUw==
+
+"@types/node@>=12.12.47":
   version "15.0.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.0.2.tgz#51e9c0920d1b45936ea04341aa3e2e58d339fb67"
   integrity sha512-p68+a+KoxpoB47015IeYZYRrdqMUcpbK8re/zpFB8Ld46LHC1lPEbp3EXgkEhAYEcPvjJF6ZO+869SQ0aH1dcA==
